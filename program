@@ -1,0 +1,25 @@
+#!/bin/bash
+
+echo Enter a number
+read num
+
+if [ $((number%2)) -eq 0 ]
+then
+	echo "Number is Even"
+else
+	echo "Number is odd"
+fi
+
+echo Enter a number :
+read n
+
+for((i=2; i<=$n/2; i++))
+do
+	ans=$(( n%i ))
+	if [ $ans -eq 0 ]
+then
+	echo "$n is not a prime no"
+exit 0
+fi 
+done
+echo "$n is a prime no"
