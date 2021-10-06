@@ -1,0 +1,14 @@
+#!/bin/bash
+
+echo "Enter number between 10 to 20"
+
+read number;
+
+
+for((counter=$number; counter>=1; counter--))
+do
+	echo"$counter";
+done
+
+
+
